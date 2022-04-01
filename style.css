@@ -61,7 +61,6 @@ h1 {
     padding: 10px 30px;
     color: white;
     border-radius: 20px;
-    flex: 0 1 50%;
     width: 195px;
     align-items: center;
     margin: auto;
@@ -83,7 +82,13 @@ a {
     background-color: #8B8B8B;
     border: 1px solid #8B8B8B;
     margin-bottom: 60px;
-    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
 }
 
 h2 {
@@ -140,6 +145,70 @@ p {
     height: 40px;
     margin: 20px 30px 20px 20px;
 }
+
+
+@media screen and (min-width: 640px) {
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+
+    .dobrodruzstvi,
+    .pohoda {
+        flex: 1 0 50%;
+        margin: 0;
+        flex: 0 0 195px;
+    }
+
+    .dobrodruzstvi {
+        margin-right: 10px;
+    }
+
+    .pohoda {
+        margin-left: 10px;
+    }
+
+    .naplanovat {
+        margin-bottom: 40px;
+    }
+
+    .prvni {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+    }
+
+    .mapa,
+    .kaktus,
+    .letadlo {
+        flex: 0 0 calc(100% / 3);
+        width: 230px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
 
 
