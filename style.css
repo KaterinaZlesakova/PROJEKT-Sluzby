@@ -17,11 +17,17 @@ body {
     color: #8B8B8B;
     background-color: #FAFAFA;
     margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .kontejner {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    max-width: 1040px;
 }
 
 
@@ -130,6 +136,15 @@ p {
     justify-content:space-around;
     margin-bottom: 15px;
 }
+
+    .mapa1,
+    .kaktus1,
+    .letadlo1,
+    .palma1,
+    .slunecnik1,
+    .karavan1 {
+        padding: 30px 20px 20px 0px;
+    }
 
 .letadlo {
     margin-bottom: 60px;
@@ -266,7 +281,95 @@ p {
         margin-top: 80px;
     }
 
+    .mapa1,
+    .kaktus1,
+    .letadlo1,
+    .palma1,
+    .slunecnik1,
+    .karavan1 {
+        padding: 0px 15px 20px 15px;
+    }
 
+}
+
+@media screen and (min-width: 1100px) {
+
+    .hlavni {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    h1 {
+        flex: 1 1 100%;
+        margin: 135px 380px 40px 80px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .buttons {
+        height: fit-content;
+        padding: 10px 30px;
+    }
+
+    .traveler {
+        margin: 0 0 0 95px;
+        flex: 1 1 100%;
+    }
+
+    .specializace {
+        margin: 40px 90px 30px 80px;
+        text-align: left;
+    }
+
+    .sluzbicky {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 80px;
+        margin: auto;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
+
+  .naplanovat {
+      margin: 20px 0 0 35px;
+      width: 430px;
+      text-align: left;
+  }
+
+    .delegati {
+        display: flex;
+        margin-top: 80px;
+        margin: auto;
+    }
+
+    .pohodli {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+
+    .mapa1
+    .kaktus,
+    .letadlo,
+    .palma,
+    .slunecnik,
+    .karavan {
+        /* width: 170px;
+        height: 190px;  */     
+        flex: 0 1 100%;  
+    }
+
+    .kancelar {
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .namiste {
+        margin-left: 0;
+        text-align: left;
+    }
 
 
 
