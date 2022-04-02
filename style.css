@@ -186,10 +186,86 @@ p {
     .mapa,
     .kaktus,
     .letadlo {
-        flex: 0 0 calc(100% / 3);
-        width: 230px;
-        
+        margin-right: 20px;
     }
+
+    .mapa,
+    .kaktus,
+    .letadlo {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 calc(100% / 3 - 60px);
+        width: 230px;
+        height: 175px;
+    }
+
+    .letadlo {
+        margin: 45px 20px 15px 0px;
+    }
+
+    .obr1,
+    .obr2,
+    .obr3 {
+        flex: 0 1 100%;
+    }
+
+    .mapa1,
+    .kaktus1,
+    .letadlo1 {
+        flex:0 1 100%;
+    }
+
+    .mapa,
+    .kaktus,
+    .letadlo {
+        margin-right: 20px;
+    }
+
+
+/* PALMA, SLUNECNIK, KARAVAN */
+
+    .druhy {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+}
+
+    .palma,
+    .slunecnik,
+    .karavan {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 calc(100% / 3 - 60px);
+        width: 230px;
+        height: 175px;
+    }
+
+    .karavan {
+        margin: 45px 20px 15px 0px;
+    }
+
+    .obr4,
+    .obr5,
+    .obr6 {
+        flex: 0 1 100%;
+    }
+
+    .palma1,
+    .slunecnik1,
+    .karavan1 {
+        flex: 0 1 100%;
+    }
+
+    .palma,
+    .slunecnik {
+        margin-right: 20px;
+    }
+
+    h2 {
+        margin-top: 80px;
+    }
+
 
 
 
