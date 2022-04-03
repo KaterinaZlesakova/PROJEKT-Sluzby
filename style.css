@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    max-width: 1040px;
+    /* max-width: 1040px; */
 }
 
 
@@ -38,13 +38,27 @@ h1 {
     font-weight: 400;
     text-align: center;
     font-weight: bold;
+}
+
+.cara {
+    width: 60px;
+    height: 2px;
     border-bottom: 1px solid #407BFF;
+    background-color: #407BFF;
+    margin-top: 10px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .traveler {
     width: 350px;
-    margin: auto;
     margin-top: 60px;
+    width: 100%;
+}
+
+.travelerobr {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .specializace {
@@ -191,6 +205,16 @@ p {
         margin-bottom: 40px;
     }
 
+    .hlavni {
+        width: 1040px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hlavnitext {
+        flex: 1 1 100%;
+    }
+
     .prvni {
         display: flex;
         flex-direction: row;
@@ -236,6 +260,18 @@ p {
         margin-right: 20px;
     }
 
+    .kaktus {
+        margin-left: 0;
+    }
+
+    .sluzbicky {
+        margin: auto;
+    }
+
+    .travelerobr {
+        margin: auto;
+    }
+
 
 /* PALMA, SLUNECNIK, KARAVAN */
 
@@ -251,7 +287,7 @@ p {
     .karavan {
         display: flex;
         flex-wrap: wrap;
-        flex: 0 0 calc(100% / 3 - 60px);
+        flex: 0 0 calc(100% / 3);
         width: 230px;
         height: 175px;
     }
@@ -326,6 +362,7 @@ p {
         flex-direction: row-reverse;
         margin-top: 80px;
         margin: auto;
+        margin-bottom: 80px;
     }
 
     h2 {
@@ -347,7 +384,10 @@ p {
 
     .pohodli {
         margin-top: 20px;
-        margin-left: 80px;
+        margin-left: 0;
+        width: 430px;
+        text-align: left;
+        margin-right: 60px;
     }
 
     .mapa1
