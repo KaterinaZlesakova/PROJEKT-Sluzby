@@ -57,8 +57,7 @@ h1 {
 }
 
 .travelerobr {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0
 }
 
 .specializace {
@@ -333,7 +332,22 @@ p {
     .hlavni {
         display: flex;
         flex-direction: row-reverse;
+        width: 100%;
     }
+
+    .travelerobr {
+        flex: 0 1 calc(100% / 2 - 80px);
+        margin: auto;
+
+    }
+
+    .hlavnitext {
+        flex: 0 1 calc(100% / 2 - 80px);
+        margin-right: 60px;
+        justify-content: left;
+    }
+
+
 
     h1 {
         flex: 1 1 100%;
@@ -342,19 +356,18 @@ p {
         text-align: left;
     }
 
-    .buttons {
-        height: fit-content;
-        padding: 10px 30px;
-    }
-
-    .traveler {
-        margin: 0 0 0 95px;
-        flex: 1 1 100%;
+    .cara {
+        margin-left: 80px;
     }
 
     .specializace {
-        margin: 40px 90px 30px 80px;
+        margin-left: 80px;
         text-align: left;
+    }
+
+    .buttons {
+        height: fit-content;
+        padding: 10px 30px;
     }
 
     .sluzbicky {
@@ -370,7 +383,7 @@ p {
     }
 
 
-  .naplanovat {
+    .naplanovat {
       margin: 20px 0 0 35px;
       width: 430px;
       text-align: left;
@@ -410,8 +423,6 @@ p {
         margin-left: 0;
         text-align: left;
     }
-
-
 
 
 
