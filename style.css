@@ -373,13 +373,13 @@ p {
 
     h1 {
         flex: 1 1 100%;
-        margin: 135px 380px 40px 80px;
+        margin: 135px 380px 40px 0px;
         width: 100%;
         text-align: left;
     }
 
     .cara {
-        margin-left: 80px;
+        margin-left: 0;
     }
 
     .specializace {
@@ -431,14 +431,14 @@ p {
         margin-right: 60px;
     }
 
-    .mapa1
+    .mapa,
     .kaktus,
     .letadlo,
     .palma,
     .slunecnik,
     .karavan {
-        /* width: 170px;
-        height: 190px;  */     
+        max-width: 170px;
+        max-height: 190px;
         flex: 0 1 100%;  
     }
 
@@ -450,6 +450,25 @@ p {
     .namiste {
         margin-left: 0;
         text-align: left;
+    }
+
+    .sluzbicky {
+        flex: 0 1 100%;
+        justify-content: center;
+    }
+
+    .info1 {
+        flex-wrap: wrap;
+    }
+
+    .delegati {
+        flex: 0 1 100%;
+        justify-content: center;
+    }
+
+    .info2 {
+        flex-wrap: wrap;
+        max-width: 430px;
     }
 
 
