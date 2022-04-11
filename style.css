@@ -26,10 +26,14 @@ body {
 .kontejner {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    /* max-width: 1040px; */
+    flex-wrap: wrap;
 }
 
+.sluzbicky,
+.delegati {
+    max-width: 1040px;
+    flex: 0 1 100%;
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -51,13 +55,14 @@ h1 {
 }
 
 .traveler {
-    width: 350px;
-    margin-top: 60px;
     width: 100%;
+    margin-top: 60px;
+    margin: auto;
 }
 
 .travelerobr {
-    margin: 0
+    width: 350px;
+    margin: auto;
 }
 
 .specializace {
@@ -69,20 +74,17 @@ h1 {
     margin-bottom: 30px;
 }
 
-
-
 .dobrodruzstvi,
 .pohoda {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
-    padding: 10px 30px;
     color: white;
     border-radius: 20px;
-    width: 195px;
     align-items: center;
     margin: auto;
+    padding: 10px 30px;
 }
 
 a {
@@ -95,12 +97,14 @@ a {
     background-color: #407BFF;
     border: 1px solid #407BFF;
     margin-bottom: 10px;
+    width: 195px;
 }
 
 .pohoda {
     background-color: #8B8B8B;
     border: 1px solid #8B8B8B;
     margin-bottom: 60px;
+    width: 230px;
 }
 
 .buttons {
@@ -182,6 +186,11 @@ p {
         flex-direction: row;
         justify-content: center;
         margin-bottom: 80px;
+        height: 40px;
+    }
+
+    .specializace {
+        width: 550px;
     }
 
 
@@ -189,15 +198,19 @@ p {
     .pohoda {
         flex: 1 0 50%;
         margin: 0;
-        flex: 0 0 195px;
     }
 
     .dobrodruzstvi {
         margin-right: 10px;
+        flex: 0 0 195px;
     }
 
     .pohoda {
         margin-left: 10px;
+        width: 220px;
+        flex: 0 0 220px;
+        text-align: center;
+        padding: 10px 20px;
     }
 
     .naplanovat {
@@ -278,7 +291,7 @@ p {
         display: flex;
         flex-direction: row;
         margin: auto;
-
+        justify-content: center;
 }
 
     .palma,
@@ -286,8 +299,8 @@ p {
     .karavan {
         display: flex;
         flex-wrap: wrap;
-        flex: 0 0 calc(100% / 3);
-        width: 230px;
+        flex: 0 0 calc(100% / 3 - 60px);
+        max-width: 230px;
         height: 175px;
     }
 
@@ -307,9 +320,16 @@ p {
         flex: 0 1 100%;
     }
 
-    .palma,
+    .palma {
+        margin-right: 0;
+        margin-left: 20px;
+    }
     .slunecnik {
         margin-right: 20px;
+    }
+
+    .slunecnik {
+        margin-left: 20px;
     }
 
     h2 {
@@ -336,14 +356,16 @@ p {
     }
 
     .travelerobr {
-        flex: 0 1 calc(100% / 2 - 80px);
+        flex: 0 1 calc(100% / 2 - 140px);
+        margin-top: 0;
+        margin-bottom: 0;
         margin: auto;
 
     }
 
     .hlavnitext {
         flex: 0 1 calc(100% / 2 - 80px);
-        margin-right: 60px;
+        margin-right: 0;
         justify-content: left;
     }
 
@@ -361,13 +383,19 @@ p {
     }
 
     .specializace {
-        margin-left: 80px;
+        margin-left: 0;
         text-align: left;
     }
 
     .buttons {
         height: fit-content;
         padding: 10px 30px;
+        padding-left: 0;
+    }
+
+    .dobrodruzstvi,
+    .pohoda {
+        width:fit-content;
     }
 
     .sluzbicky {
